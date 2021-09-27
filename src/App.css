@@ -1,38 +1,143 @@
 .App {
   text-align: center;
+  background-color: #272c33;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 30vh;
+}
+
+.title {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 5vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  height: 60vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: #3f4652;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thoughts {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 60vh;
+  list-style: none;
+  padding-left: 0;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #3eb489;
+  opacity: 0.75;
+  height: 4vh;
+  width: 10vw;
+  font-size: 1.5vh;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.Thought {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px;
+  background-color: white;
+  height: 4vh;
+  font-size: 2vh;
+  border-radius: 0.2rem;
+  padding: 0 10px;
+}
+
+.remove-button {
+  border: none;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: white;
+}
+
+.text {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.text-form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid red;
+  height: 4vh;
+  border-radius: 0.2rem;
+  border: 2px solid white;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  background-color: #3f4652;
+  color: white;
+  width: 17vw;
+  transition: 0.25s;
+  border: none;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  width: 27vw;
+}
+
+input[type="submit"] {
+  width: 3vw;
+  background: white;
+  border: none;
+}
+
+.selected-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  background: #3eb489;
+}
+
+#result-h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 10vw;
+  color: white;
+}
+
+#result-p {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 4vw;
+  color:white;
+}
+
+footer {
+  background-color: #3eb489;
+  display: inline-flex;
+  height: 10vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.myinfo {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #3eb489;
 }
