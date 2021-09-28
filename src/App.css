@@ -102,10 +102,17 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vh;
+  flex-flow: column wrap;
   background: #3eb489;
+}
+
+#go-back-home {
+  border: none;
+  border-radius: 0.2rem;
+  background: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2vw;
+  padding: 10px 20px;
 }
 
 #result-h1 {
@@ -118,6 +125,16 @@ input[type="submit"] {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 4vw;
   color:white;
+}
+
+.result-form {
+  background: #3eb489;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 footer {

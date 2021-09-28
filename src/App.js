@@ -6,12 +6,12 @@ import { Result } from './Result';
 import './App.css';
 
 function App() {
-  const [thoughts, setThoughts] = useState([
-    {
-      id: generateId(),
-      text: "오늘 죽어도 떡볶이는 먹고 싶어."
-    }
-  ]);
+  const iniThought = {
+    id: generateId(),
+    text: "오늘 죽어도 떡볶이는 먹고 싶어."
+  }
+  
+  const [thoughts, setThoughts] = useState([iniThought]);
 
   const [authorized, setAuthorized] = useState(false);
   const [result, setResult] = useState('');
@@ -35,6 +35,11 @@ function App() {
     setAuthorized(true);
     const resulted = setRandomThought();
     setResult(resulted.text);
+  }
+
+  const handleResultClick = () => {
+    setAuthorized(false);
+    setThoughts([iniThought]);
   }
 
   if (!authorized) {
@@ -67,7 +72,13 @@ function App() {
   }
   else {
     return (
-      <Result result={result} />
+      <div className="result-form">
+        <Result result={result} />
+        <button 
+          id="go-back-home"
+          onClick={handleResultClick}
+        >다시 뽑기</button>
+      </div>
     )
   }
 }
