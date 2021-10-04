@@ -13,7 +13,7 @@
 
 .title {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 5vw;
+  font-size: 100px;
   color: white;
 }
 
@@ -53,7 +53,7 @@ main {
   margin: 15px 20px;
   background-color: white;
   height: 4vh;
-  font-size: 2vh;
+  font-size: 20px;
   border-radius: 0.2rem;
   padding: 0 10px;
 }
@@ -82,18 +82,19 @@ input[type="text"] {
   box-sizing: border-box;
   background-color: #3f4652;
   color: white;
-  width: 17vw;
+  width: 300px;
   transition: 0.25s;
   border: none;
   text-align: center;
 }
 
 input[type="text"]:focus {
-  width: 27vw;
+  width: 500px;
 }
 
 input[type="submit"] {
-  width: 3vw;
+  width: 60px;
+  text-align: center;
   background: white;
   border: none;
 }
@@ -111,19 +112,19 @@ input[type="submit"] {
   border-radius: 0.2rem;
   background: white;
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 2vw;
+  font-size: 20px;
   padding: 10px 20px;
 }
 
 #result-h1 {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 10vw;
+  font-size: 150px;
   color: white;
 }
 
 #result-p {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 4vw;
+  font-size: 60px;
   color:white;
 }
 
@@ -148,6 +149,7 @@ footer {
 
 .myinfo {
   font-family: 'Nanum Gothic', sans-serif;
+  font-size: 40px;
   color: white;
 }
 

@@ -32,9 +32,12 @@ function App() {
   }
 
   const handleClick = () => {
-    setAuthorized(true);
-    const resulted = setRandomThought();
-    setResult(resulted.text);
+    if (thoughts.length > 0) {
+      setAuthorized(true);
+      const resulted = setRandomThought();
+      setResult(resulted.text);
+    }
+
   }
 
   const handleResultClick = () => {
